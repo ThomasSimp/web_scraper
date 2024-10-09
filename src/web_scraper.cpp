@@ -16,7 +16,7 @@ void open_url(const char* url) {
 
 // Static method to handle source button click
 static void on_source_button_clicked(GtkWidget *widget, gpointer data) {
-    open_url("https://github.com/YourRepo");
+    open_url("https://github.com/ThomasSimp/web_scraper");
 }
 
 WebScraper::WebScraper() {
@@ -51,7 +51,7 @@ WebScraper::WebScraper() {
     gtk_box_pack_start(GTK_BOX(vbox), footer_box, FALSE, FALSE, 0);
 
     // Add a label to the footer box
-    GtkWidget *footer_label = gtk_label_new("GitHub: https://github.com/YourRepo");
+    GtkWidget *footer_label = gtk_label_new("GitHub:");
     gtk_box_pack_start(GTK_BOX(footer_box), footer_label, FALSE, FALSE, 0);
 
     // Add a button for source code
